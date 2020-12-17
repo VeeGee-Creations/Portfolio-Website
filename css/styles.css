@@ -149,3 +149,9 @@ footer a:hover{
 .contact label{
   font-size: 25px;
 }
+
+input:required:,
+textarea:required{
+  border: 1px solid red;
+  outline: none;
+}
