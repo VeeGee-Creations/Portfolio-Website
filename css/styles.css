@@ -10,6 +10,9 @@ body{
 header {
   background-color: #34495E;
   background-image: linear-gradient(to right, #34495E , #566573);
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 header::after{
@@ -110,11 +113,19 @@ footer a:hover{
 
 .body{
   position: relative;
-  padding-top: 150px;
+  padding-top: 50px;
   margin-left: 500px;
   color: #CCD1D1;
 }
 
+.body h1::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; 
+  height: 60px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
 
 .send{
   background-color: #CCD1D1;
@@ -130,7 +141,11 @@ footer a:hover{
 }
 
 .contact p{
-  font-size: 25px;
-  margin-bottom: 0;
+  font-size: 20px;
+  /*margin-bottom: 0;*/
   margin-top: 0;
+}
+
+.contact label{
+  font-size: 25px;
 }
