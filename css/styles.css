@@ -66,7 +66,7 @@ nav a:hover{
   border-radius: 50%;
   float: left;
   margin-right: 25px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 mark{
@@ -154,33 +154,6 @@ footer a:hover{
   font-size: 25px;
 }
 
-/*input:required:,
-textarea:required{
-  border: 1px solid red;
-  outline: none;
-}*/
-
-/*.contact-email,.contact-message::placeholder {
-  color: red;
-  opacity: 1;
-}
-
-.contact-email.contact-message::-ms-input-placeholder {
-  color: red;
-}
-
-.contact-email,.contact-message::-ms-input-placeholder {
-  color: red;
-}
-
-textarea,
-input,
-button,
-select {
-  font-family: inherit;
-  font-size: inherit;
-}*/
-
 th{
   font-size: 20px;
   background-color: #566573; 
@@ -197,4 +170,9 @@ th, td{
 
 td{
     text-align: center;
+}
+
+.aboutMeText{
+  max-width: 500px;
+  min-width: 100px;
 }
