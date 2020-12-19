@@ -11,12 +11,12 @@
       <div class="navbar">
         <img src="assets/VeeGee_Creations_white_200x200_cropped.png" alt="VeeGee Creations" class="logo">
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html#contact">Contact</a></li>
-            <!--<li><a href="#"></a></li>-->
+          <ul role="menubar">
+            <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="presentation"><a href="#" role="menuitem">Projects</a></li>
+            <li role="presentation"><a href="about.html" role="menuitem">About Me</a></li>
+            <li role="presentation"><a href="contact.html#contact" role="menuitem">Contact</a></li>
+            <!--<li role="presentation"><a href="#" role="menuitem"></a></li>-->
           </ul>
         </nav>
       </div>
@@ -24,8 +24,34 @@
     <div class="body">
       <main>
         <h1>About Me</h1>
-        <br/><br/>
-        <h3>To be continued...</h3>
+        <p>This will be a short description about me.</p>
+        <br/>
+        <table>
+          <thead class="skillHeader">
+            <tr>
+              <th>Skills</th>
+              <th>Years of Experience</th>
+              <th>Level of Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>1</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>1</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>1</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
       </main>
     </div>
     <footer>
@@ -37,5 +63,6 @@
         <a href="https://www.linkedin.com/in/vincent-geesman/" target="_blank"><img src="assets/linkedin-3-32.ico" alt="LinkedIn"></a>
       </div>
     </footer>
+    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
