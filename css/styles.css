@@ -3,7 +3,6 @@ body{
 }
 
 .navbar {
-  width: 80%;
   margin: 20 auto;
 }
 
@@ -150,8 +149,29 @@ footer a:hover{
   font-size: 25px;
 }
 
-input:required:,
+/*input:required:,
 textarea:required{
   border: 1px solid red;
   outline: none;
+}*/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+
+textarea,
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
 }
