@@ -1,0 +1,178 @@
+body{
+  background-color: #34495E;
+}
+
+.navbar {
+  margin: 20 auto;
+}
+
+header {
+  background-color: #34495E;
+  background-image: linear-gradient(to right, #34495E , #566573);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+header::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo{
+  padding-left: 20px;
+  float: left;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 28px;
+  padding-right: 10px;
+}
+
+nav a{
+  color: #DCE0E0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover{
+  color: #17202A;
+}
+
+.body{
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 180px;
+  margin-left: 500px;
+  color: #DCE0E0;
+}
+
+.selfie{
+  border-radius: 50%;
+  float: left;
+  margin-right: 25px;
+  margin-top: 50px;
+}
+
+mark{
+  background-color: #000;
+  color: #B7950B;
+}
+
+.body a{
+  color: #DCE0E0;
+  font-size: 16px;
+}
+
+.body a:hover{
+  color: #17202A;
+}
+
+.links{
+  /*margin-top: 200px;*/
+  color: #DCE0E0;
+  text-align: center;
+}
+
+footer {
+  background-color: #566573;
+  padding-bottom: 5px;
+  /*background-image: linear-gradient(to right, #34495E , #566573);*/
+}
+
+footer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer a{
+  color: #DCE0E0;
+  font-size: 16px;
+}
+
+footer p{
+  font-size: 18px;
+  font-weight: 200;
+}
+
+footer a:hover{
+  color: #17202A;
+}
+
+.body{
+  position: relative;
+  padding-top: 50px;
+  margin-left: 500px;
+  color: #DCE0E0;
+}
+
+.body h1::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; 
+  height: 60px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.send{
+  background-color: #DCE0E0;
+  padding: 10px 24px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 20px;
+  color: #17202A;
+}
+
+.send:hover{
+  background-color:#17202A;
+  color: #DCE0E0;
+}
+
+.contact p{
+  font-size: 20px;
+  /*margin-bottom: 0;*/
+  margin-top: 0;
+}
+
+.contact label{
+  font-size: 25px;
+}
+
+th{
+  font-size: 20px;
+  background-color: #566573; 
+}
+
+table{
+  border: 1px solid black;
+}
+
+th, td{
+  border: 1px solid black;
+  /*padding-right: 15px;*/
+}
+
+td{
+    text-align: center;
+}
+
+.aboutMeText{
+  max-width: 500px;
+  min-width: 100px;
+}
