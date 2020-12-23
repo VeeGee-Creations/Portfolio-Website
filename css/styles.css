@@ -1,16 +1,51 @@
 /*
 Colors used
 
-Text Color: #2b2b2b;
-Primary Color: #357b70;
-Secondary Color: #e0b354;
+Text Color (Light Grey): #DCE0E0;
+Primary Color (Dark Blue): #34495E;
+Secondary Color (Slate Grey): #566573;
+Highlight Color (Darker Blue): #17202A;
 */
+html, body{
+    height: 100%
+}
 
 body{
+    display: flex;
+    flex-direction: column;
+    background-color: #34495E;
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
+    color: #DCE0E0;
+}
+
+.body-content__container{
+    flex: 1 0 auto;
+    position: relative;
+    padding-top: 50px;
+    margin-left: 35%;
+}
+
+header {
+    background-image: linear-gradient(to right, #34495E , #566573);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #566573;
+    padding-bottom: 5px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 h1{
@@ -28,20 +63,93 @@ h3{
   font-weight: 700;
 }
 
+footer h3{
+  font-weight: 200;
+}
+
+.contact label{
+  font-size: 18px;
+}
+
+.navigation-bar__logo{
+  padding-left: 20px;
+  float: left;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 28px;
+    padding-right: 10px;
+}
+
 a{
-  color: #357b70;
+    color: #DCE0E0;
+    text-decoration-style: dotted;
 }
 
 a:visited{
-  color: #05676e;
+    color: #0BD6E5;
 }
 
 a:hover, a:focus{
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a:active{
-  color: #489c79;
+nav a{
+  color: #DCE0E0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navigation-list__item:visited{
+    color:#DCE0E0;
+}
+
+.navigation-list__item:hover , .navigation-list__item:focus{
+    color: #17202A;
+}
+
+
+
+#navigation-list__item--active{
+    color: #17202A;
+    text-decoration: underline;
+}
+
+.body-content__selfie{
+    border-radius: 50%;
+    float: left;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.body-content__about--paragraph{
+  position: relative;
+  max-width: 500px;
+  min-width: 100px;
+}
+
+.body-content__table--skills{
+  position: absolute;
+  left: 8%;
+  right: 8%;
+}
+
+mark{
+  background-color: #000;
+  color: #B7950B;
 }
 
 button{
@@ -50,8 +158,8 @@ button{
   /*inherit font from parent*/
   font-family: inherit;
   /*style button and font*/
-  background-color: #357b70;
-  color: white;
+  background-color: #DCE0E0;
+  color: #17202A;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -65,6 +173,21 @@ button:hover, button:focus{
   opacity: 0.8;
 }
 
-.navigation-list__item--active{
-  text-decoration: none;
+th{
+  font-size: 20px;
+  background-color: #566573; 
+}
+
+table{
+  border: 1px solid #000;
+  background-color: #34495E;
+}
+
+th, td{
+  border: 1px solid black;
+  /*padding-right: 15px;*/
+}
+
+td{
+    text-align: center;
 }

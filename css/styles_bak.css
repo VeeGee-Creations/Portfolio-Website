@@ -1,178 +1,70 @@
+/*
+Colors used
+
+Text Color: #2b2b2b;
+Primary Color: #357b70;
+Secondary Color: #e0b354;
+*/
+
 body{
-  background-color: #34495E;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.navbar {
-  margin: 20 auto;
+h1{
+  font-size: 30px;
+  font-weight: 700;
 }
 
-header {
-  background-color: #34495E;
-  background-image: linear-gradient(to right, #34495E , #566573);
-  position: sticky;
-  top: 0;
-  z-index: 9;
+h2{
+  font-size: 24px;
+  font-weight: 700;
 }
 
-header::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.logo{
-  padding-left: 20px;
-  float: left;
-}
-
-nav{
-  float: right;
-}
-
-nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li{
-  display: inline-block;
-  margin-left: 30px;
-  padding-top: 28px;
-  padding-right: 10px;
-}
-
-nav a{
-  color: #DCE0E0;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-nav a:hover{
-  color: #17202A;
-}
-
-.body{
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 180px;
-  margin-left: 500px;
-  color: #DCE0E0;
-}
-
-.selfie{
-  border-radius: 50%;
-  float: left;
-  margin-right: 25px;
-  margin-top: 50px;
-}
-
-mark{
-  background-color: #000;
-  color: #B7950B;
-}
-
-.body a{
-  color: #DCE0E0;
-  font-size: 16px;
-}
-
-.body a:hover{
-  color: #17202A;
-}
-
-.links{
-  /*margin-top: 200px;*/
-  color: #DCE0E0;
-  text-align: center;
-}
-
-footer {
-  background-color: #566573;
-  padding-bottom: 5px;
-  /*background-image: linear-gradient(to right, #34495E , #566573);*/
-}
-
-footer::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-footer a{
-  color: #DCE0E0;
-  font-size: 16px;
-}
-
-footer p{
+h3{
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 700;
 }
 
-footer a:hover{
-  color: #17202A;
+a{
+  color: #357b70;
 }
 
-.body{
-  position: relative;
-  padding-top: 50px;
-  margin-left: 500px;
-  color: #DCE0E0;
+a:visited{
+  color: #05676e;
 }
 
-.body h1::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -60px; 
-  height: 60px; 
-  visibility: hidden; 
-  pointer-events: none;
+a:hover, a:focus{
+  text-decoration: none;
 }
 
-.send{
-  background-color: #DCE0E0;
-  padding: 10px 24px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  font-size: 20px;
-  color: #17202A;
+a:active{
+  color: #489c79;
 }
 
-.send:hover{
-  background-color:#17202A;
-  color: #DCE0E0;
+button{
+  /*override default*/
+  border: none;
+  /*inherit font from parent*/
+  font-family: inherit;
+  /*style button and font*/
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.contact p{
-  font-size: 20px;
-  /*margin-bottom: 0;*/
-  margin-top: 0;
+button:hover, button:focus{
+  /*turn mouse to hand*/
+  cursor: pointer;
+  /*reduce opacity*/
+  opacity: 0.8;
 }
 
-.contact label{
-  font-size: 25px;
-}
-
-th{
-  font-size: 20px;
-  background-color: #566573; 
-}
-
-table{
-  border: 1px solid black;
-}
-
-th, td{
-  border: 1px solid black;
-  /*padding-right: 15px;*/
-}
-
-td{
-    text-align: center;
-}
-
-.aboutMeText{
-  max-width: 500px;
-  min-width: 100px;
+.navigation-list__item--active{
+  text-decoration: none;
 }

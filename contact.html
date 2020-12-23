@@ -11,50 +11,33 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <img src="assets/VeeGee_Creations_200x200_cropped.png" alt="VeeGee Creations" class="logo">
+      <div>
+        <a href="index.html"><img src="assets/VeeGee_Creations_white_200x200_cropped.png" alt="VeeGee Creations" class="navigation-bar__logo"></a>
         <nav>
           <ul role="menubar">
             <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
             <li role="presentation"><a href="#" role="menuitem" class="navigation-list__item">Projects</a></li>
             <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About Me</a></li>
-            <li role="presentation"><a href="contact.html#contact" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a></li>
+            <li role="presentation"><a href="contact.html#contact" role="menuitem" class="navigation-list__item" id="navigation-list__item--active">Contact</a></li>
             <!--<li role="presentation"><a href="#" role="menuitem"></a></li>-->
           </ul>
         </nav>
       </div>
     </header>
-    <div class="body" role="presentation">
+    <div class="body-content__container">
       <main>
-        <h1 id="contact">Contact Me</h1>
-        <div class="contact" role="presentaton">
-          <!-- Trying different form
-          <p>Email: <a href="mailto:vgeesman@gmail.com">vgeesman@gmail.com</a></p>
-          <p>Skype: <a href="skype:lrdsqrl2507?voicemail">Vincent Geesman</a></p>
-          <br/>
-          <h2>Email Me Now</h2>
-          <form id="email" action="mailto:vgeesman@gmail.com" method="GET">
-            <label>Subject</label>
-            <br/>
-            <input name="subject" type="text" size="50"/>
-            <br/><br/>
-            <label>Message</label>
-            <br/>
-            <textarea name="body" rows="20" cols="75"></textarea>
-            <br/>
-          </form>
-          <button type="submit" form="email" value="submit" class="button send"><b>Send</b></button>
-          -->
+        <h1>Contact Me</h1>
+        <div>
           <form action="" method="post">
-            <label class="standard-label" for="contact-email">E-mail: </label>
+            <label class="standard-label" for="contact-email">E-mail:</label>
             <br/>
             <input type="email" id="contact-email" required="required" placeholder="*Required">
             <br/>
-            <label class="standard-label" for="contact-tel">Telephone: </label>
+            <label class="standard-label" for="contact-tel">Telephone:</label>
             <br/>
             <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####">
             <br/>
-            <label class="standard-label" for="contact-message">Message: </label>
+            <label class="standard-label" for="contact-message">Message:</label>
             <br/>
             <textarea id="contact-message" maxlength="240" required="required" style="margin: 0px; width: 356px; height: 81px;" placeholder="*Required"></textarea>
             <br/>
@@ -64,12 +47,12 @@
       </main>
     </div>
     <footer>
-      <div class="links" role="presentation">
-        <p>Follow me on</p>
+      <div>
+        <h3>Follow me on</h3>
         <br/>
-        <a href="https://github.com/VeeGee-Creations" target="_blank"><img src="assets/github.svg" height="32px" alt="Github"></a>
-        <a href="https://twitter.com/VincentGeesman" target="_blank"><img src="assets/twitter.svg" height="32px" alt="Twitter"></a>
-        <a href="https://www.linkedin.com/in/vincent-geesman/" target="_blank"><img src="assets/linkedin_dark.svg" height="32px" alt="LinkedIn"></a>
+        <a href="https://github.com/VeeGee-Creations" target="_blank"><img src="assets/github-32.png" alt="Github"></a>
+        <a href="https://twitter.com/VincentGeesman" target="_blank"><img src="assets/twitter-32.ico" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/vincent-geesman/" target="_blank"><img src="assets/linkedin-32.ico" alt="LinkedIn"></a>
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
