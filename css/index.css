@@ -1,0 +1,31 @@
+.body{
+    grid-auto-rows: 1fr;
+}
+.content{
+    grid-row-start: 2;
+    grid-column: 5 / 11;
+    display: flex;
+    padding-top: 15%;
+}
+
+.selfie{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    min-width: 250px;
+    min-height: 250px;
+    margin-right: 20px;
+}
+
+.selfie__item{
+    width: 100%;
+    height: auto;
+}
+
+mark{
+    background-color: #000;
+    color:  #B7950B;
+}

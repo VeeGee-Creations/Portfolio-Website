@@ -1,0 +1,118 @@
+/*
+Colors used
+
+Text Color:  #DCE0E0;
+Primary Color: #34495E;
+Secondary Color: #566573;
+*/
+html, body{
+    height: 100%
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color:  #34495E;
+    color: #DCE0E0;
+}
+
+header{
+    z-index: 9;
+    position: sticky;
+    top: 0;
+}
+
+.header{
+    background-image: linear-gradient(to right, #34495E , #566573);
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a{
+    color: #DCE0E0;
+}
+
+a:visited{
+    color: #0BD6E5;
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+.menu-list__item{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.menu-list__item:visited{
+    color: #DCE0E0;
+}
+
+.menu .menu-list__item:hover, .menu .menu-list__item:focus{
+    color: #000;
+}
+
+.menu .menu-list__item--active{
+    color: #000;
+}
+
+.footer{
+    background-color: #566573;
+}
+
+.footer h3{
+    font-weight: 200;
+}
+
+.menu-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.body{
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(min-content, max-content) auto minmax(min-content, auto);
+}
+
+.header{
+    align-items: center;
+    grid-column: span 12;
+    display: flex;
+    padding-left: 20px;
+}
+
+.menu{
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.menu-list{
+    display: flex;
+}
+
+.footer{
+    grid-row-start: 7;
+    grid-column: span 12;
+    text-align: center;
+}
