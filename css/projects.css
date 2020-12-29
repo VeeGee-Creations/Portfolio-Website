@@ -1,0 +1,14 @@
+.grid__item {
+    background-color: lightgrey;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid__item:last-child {
+    grid-column: 3 /3;
+    grid-row: 1 / 3;
+}

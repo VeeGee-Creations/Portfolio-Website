@@ -1,0 +1,33 @@
+.body{
+    grid-auto-rows: 1fr;
+}
+
+.content{
+    grid-row-start: 4;
+    grid-column: 5 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
+
+button{
+    /*override default*/
+    border: none;
+    /*inherit font from parent*/
+    font-family: inherit;
+    /*style button and font*/
+    background-color: #DCE0E0;
+    color: #17202A;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus{
+    /*turn mouse to hand*/
+    cursor: pointer;
+    /*reduce opacity*/
+    opacity: 0.8;
+}

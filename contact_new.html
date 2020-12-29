@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>VeeGee Creations</title>
+        <link rel="shortcut icon" href="assets/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/basic.css">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+        <div class="body">
+            <header class="header">
+                <div class="logo header__item">
+                    <img src="assets/VeeGee_Creations_white_200x200_cropped.png" alt="VeeGee Creations" class="logo__item">
+                </div>
+                <div class="menu">
+                    <nav class="menubar">
+                        <ul role="menubar" class="menu-list">
+                            <li role="presentation"><a href="index_new.html" role="menuitem" class="menu-list__item">Home</a></li>
+                            <li role="presentation"><a href="projects.html" role="menuitem" class="menu-list__item">Projects</a></li>
+                            <li role="presentation"><a href="about_new.html" role="menuitem" class="menu-list__item">About Me</a></li>
+                            <li role="presentation"><a href="contact_new.html#contact" role="menuitem" class="menu-list__item menu-list__item--active">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="content">
+                <h1>Contact Me</h1>
+                <form action="" method="post">
+                    <label class="standard-label" for="contact-email">E-mail:</label>
+                    <br />
+                    <input type="email" id="contact-email" required="required" placeholder="*Required">
+                    <br />
+                    <label class="standard-label" for="contact-tel">Telephone:</label>
+                    <br />
+                    <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####">
+                    <br />
+                    <label class="standard-label" for="contact-message">Message:</label>
+                    <br />
+                    <textarea id="contact-message" maxlength="240" required="required"
+                        style="margin: 0px; width: 356px; height: 81px;" placeholder="*Required"></textarea>
+                    <br />
+                    <button type="submit" class="send">Send Message</button>
+                </form>
+            </main>
+            <footer class="footer">
+                <p>Follow me on</p>
+                <br />
+                <a href="https://github.com/VeeGee-Creations" target="_blank"><img src="assets/github-32.png" alt="Github"></a>
+                <a href="https://twitter.com/VincentGeesman" target="_blank"><img src="assets/twitter-32.ico" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/vincent-geesman/" target="_blank"><img src="assets/linkedin-32.ico" alt="LinkedIn"></a>
+            </footer>
+            <script src="js/tota11y.min.js"></script>
+        </div>
+    </body>
+</html>
