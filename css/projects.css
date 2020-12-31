@@ -1,14 +1,33 @@
-.grid__item {
-    background-color: lightgrey;
+.body{
+    grid-template-rows: repeat(8, 1fr);
 }
 
-.grid {
+.content{
+    grid-area: 2 / 3 / 7 / 11;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    grid-gap: 10px;
 }
 
-.grid__item:last-child {
-    grid-column: 3 /3;
-    grid-row: 1 / 3;
+.content__item, .content__item p, .content__item a{
+    background-color: lightgray;
+    color: #000;
+}
+
+.content__item{
+    height: 100%;
+    width: 100%;
+}
+
+.content__title{
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+.footer{
+    grid-row-start: 8;
 }

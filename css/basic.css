@@ -5,6 +5,10 @@ Text Color:  #DCE0E0;
 Primary Color: #34495E;
 Secondary Color: #566573;
 */
+* {
+  box-sizing: border-box;
+}
+
 html, body{
     height: 100%
 }
@@ -75,7 +79,7 @@ a:hover, a:focus{
 }
 
 .footer{
-    background-color: #566573;
+    background-image: linear-gradient(to bottom, #34495E , #566573);
 }
 
 .footer h3{
@@ -88,11 +92,12 @@ a:hover, a:focus{
 }
 
 .body{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(min-content, max-content) auto minmax(min-content, auto);
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
 }
 
 .header{
@@ -115,4 +120,6 @@ a:hover, a:focus{
     grid-row-start: 7;
     grid-column: span 12;
     text-align: center;
+    display: grid;
 }
+

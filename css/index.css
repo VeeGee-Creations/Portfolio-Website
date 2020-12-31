@@ -1,11 +1,7 @@
-.body{
-    grid-auto-rows: 1fr;
-}
 .content{
-    grid-row-start: 2;
-    grid-column: 5 / 11;
+    grid-area: 3 / 4 / 6 / 11;
     display: flex;
-    padding-top: 15%;
+    align-self: center;
 }
 
 .selfie{
