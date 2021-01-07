@@ -86,23 +86,6 @@ a:hover, a:focus{
     height: min-content;
 }
 
-/* .menu{
-    margin-left: auto;
-    padding-right: 20px;
-}
-
-.menubar{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.menu-list li{
-    display: inline-block;
-    margin-left: 15px;
-    white-space: nowrap;
-} */
-
 button, .button{
     /*override default*/
     border: none;

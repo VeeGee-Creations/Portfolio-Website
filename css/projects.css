@@ -8,7 +8,6 @@
 .projects{
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
-    /* grid-template-rows: 7 1fr 1fr; */
     grid-gap: 10px;
 }
 
