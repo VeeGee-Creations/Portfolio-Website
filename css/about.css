@@ -8,7 +8,7 @@
 .about{
     grid-row-start: 4;
     text-align: center;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .button:visited{
@@ -17,7 +17,7 @@
 
 .table{
     position: relative;
-    min-width: 400px;
+    /* min-width: 400px; */
     text-align: center;
     left: 10px;
 }
@@ -129,4 +129,10 @@ td{
     animation: 3.3s arm-bounce infinite ease;
     transform-origin: bottom;
     transform-box: fill-box;
+}
+
+@media all and (min-width: 0px) and (max-width: 500px){
+    .about{
+        max-width: 400px;
+    }
 }

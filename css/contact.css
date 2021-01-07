@@ -6,3 +6,14 @@
     justify-self: center;
     align-items: center;
 }
+
+#contact-message{
+    width: 356px;
+    height: 81px;
+}
+
+@media all and (min-width: 0px) and (max-width: 500px){
+    #contact-message{
+        width: 200px;
+    }
+}
