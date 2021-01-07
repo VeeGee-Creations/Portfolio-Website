@@ -10,7 +10,8 @@ Secondary Color: #566573;
 }
 
 html, body{
-    height: 100%
+    height: 100vh;
+    width: 100vw;
 }
 
 body{
@@ -23,13 +24,14 @@ body{
 }
 
 header{
-    z-index: 9;
+    z-index: 1;
     position: sticky;
     top: 0;
 }
 
 .header{
     background-image: linear-gradient(to right, #34495E , #566573);
+    width: 100vw;
 }
 
 h1{
@@ -59,25 +61,6 @@ a:hover, a:focus{
     text-decoration: none;
 }
 
-.menu-list__item{
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.menu-list__item:visited{
-    color: #DCE0E0;
-}
-
-.menu .menu-list__item:hover, .menu .menu-list__item:focus{
-    color: #000;
-}
-
-.menu .menu-list__item--active{
-    color: #000;
-}
-
 .footer{
     background-image: linear-gradient(to bottom, #34495E , #566573);
 }
@@ -86,40 +69,66 @@ a:hover, a:focus{
     font-weight: 200;
 }
 
-.menu-list li{
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.body{
+.grid-container{
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
     grid-auto-rows: 1fr;
 }
 
 .header{
     align-items: center;
-    grid-column: span 12;
+    grid-column: 1 / -1;
     display: flex;
     padding-left: 20px;
+    height: min-content;
 }
 
-.menu{
+/* .menu{
     margin-left: auto;
     padding-right: 20px;
 }
 
-.menu-list{
+.menubar{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu-list li{
+    display: inline-block;
+    margin-left: 15px;
+    white-space: nowrap;
+} */
+
+button, .button{
+    /*override default*/
+    border: none;
+    /*inherit font from parent*/
+    font-family: inherit;
+    /*style button and font*/
+    background-color: #DCE0E0;
+    color: #17202A;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus{
+    /*turn mouse to hand*/
+    cursor: pointer;
+    /*reduce opacity*/
+    opacity: 0.8;
 }
 
 .footer{
     grid-row-start: 7;
-    grid-column: span 12;
+    grid-column: 1 / -1;
     text-align: center;
+    align-content: space-around;
     display: grid;
 }
-

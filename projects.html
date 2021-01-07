@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VeeGee Creations</title>
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,15 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
-    <div class="body">
+    <div class="grid-container">
         <header class="header">
             <div class="logo header__item">
                 <img src="assets/VeeGee_Creations_white_200x200_cropped.png" alt="VeeGee Creations" class="logo__item">
             </div>
-            <div class="menu">
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <nav class="menubar">
+                        <ul role="menubar" class="menu-list">
+                            <li role="presentation"><a href="index.html" role="menuitem" class="menu-list__item">Home</a></li>
+                            <li role="presentation"><a href="projects.html" role="menuitem" class="menu-list__item menu-list__item--active">Projects</a></li>
+                            <li role="presentation"><a href="about.html" role="menuitem" class="menu-list__item">About Me</a></li>
+                            <li role="presentation"><a href="contact.html#contact" role="menuitem" class="menu-list__item">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="menu">
                 <nav class="menubar">
                     <ul role="menubar" class="menu-list">
                         <li role="presentation"><a href="index.html" role="menuitem" class="menu-list__item">Home</a>
@@ -32,57 +49,59 @@
                                 class="menu-list__item">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
         </header>
         <main class="content">
-            <h1 class="content__title">My Projects</h1>
-            <div class="content__item">
-            <h2>Mobile web app</h2>
-            <p>
-                Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
-                HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-            </div>
-            <div class="content__item">
-            <h2>Mobile web app</h2>
-            <p>
-                Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
-                HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-            </div>
-            <div class="content__item">
-            <h2>Mobile web app</h2>
-            <p>
-                Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
-                HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-            </div>
-            <div class="content__item">
-            <h2>Mobile web app</h2>
-            <p>
-                Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
-                HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-            </div>
-            <div class="content__item">
-            <h2>Mobile web app</h2>
-            <p>
-                Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
-                HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-            </div>
-            <div class="content__item">
-            <h2>Mobile web app</h2>
-            <p>
-                Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
-                HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
+            <div class="projects">
+                <h1 class="projects__title">My Projects</h1>
+                <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+                </div>
+                <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+                </div>
+                <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+                </div>
+                <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+                </div>
+                <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+                </div>
+                <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+                </div>
             </div>
         </main>
         <footer class="footer">

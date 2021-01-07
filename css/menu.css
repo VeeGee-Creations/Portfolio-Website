@@ -1,0 +1,154 @@
+.menu-wrap{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.menu-wrap .hamburger,
+.menu-wrap .menu-list{
+    position: relative;
+}
+
+.menu-wrap .menu-list{
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style: none;
+    position: absolute;
+    background: #34495E;
+    border: 2px solid #DCE0E0;
+    border-radius: 5px;
+    left: -230px;
+    top: -15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 5s ease;
+}
+
+.menu-wrap .menu{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0) rotate(90deg) translate(40px, 30px);
+    transition: all .6s cubic-bezier(0.42, 0, 0.36, 1.93);
+}
+
+.menu-wrap .menu-list > li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrap .menu-list > li:hover{
+    background-color: #566573;
+}
+
+.menu-list__item{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.menu-list__item:visited{
+    color: #DCE0E0;
+}
+
+.menu-wrap .menu-list__item--active{
+    color: #000;
+}
+
+.menu-wrap .toggler{
+    position: absolute;
+    left: -60px;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+/* Hamburger Box */
+.menu-wrap .hamburger{
+    position:absolute;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    left: -60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #34495E;
+    border: 2px solid #DCE0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+/* Middle Line */
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #DCE0E0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+/* Top and Bottom Line */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 4px;
+    background: inherit;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+/* Move Bottom and Top Line */
+.menu-wrap .hamburger > div::before{
+    transform: translateY(-12px);
+}
+
+.menu-wrap .hamburger > div::after{
+    transform: translateY(12px);
+}
+
+/* Toggler Animate */
+.menu-wrap .toggler:checked + .hamburger > div{
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div::before{
+    background: #DCE0E0;
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div::after{
+    background: #DCE0E0;
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-wrap .toggler:checked ~ .menu{
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+}
