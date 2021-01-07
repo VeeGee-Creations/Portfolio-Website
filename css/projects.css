@@ -19,6 +19,7 @@
 .projects__item{
     height: 100%;
     width: 100%;
+    padding: 1em;
 }
 
 .projects__title{

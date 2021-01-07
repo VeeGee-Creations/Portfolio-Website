@@ -18,21 +18,22 @@
 .table{
     position: relative;
     min-width: 400px;
+    text-align: center;
     left: 10px;
 }
 
 table{
-    border: 2px solid black;
+    border: 2px solid #DCE0E0;
 }
 
 th{
-    border: 1px solid black;
-    padding: 6px;
+    border: 1px solid #DCE0E0;
+    padding: 1em;
 }
 
 td{
-    border: 1px solid black;
-    padding: 6px;
+    border: 1px solid #DCE0E0;
+    padding: .5em;
 }
 
 .programmer{
