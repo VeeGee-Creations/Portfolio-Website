@@ -230,7 +230,8 @@
 @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
         .menu-list__item {
-        
+        height: initial;
+        width: initial;
       }
     }
   }
