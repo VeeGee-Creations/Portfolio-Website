@@ -152,6 +152,15 @@ button:hover, button:focus, .button:hover, .button:focus{
     display: grid;
 }
 
+.footer__item{
+    padding-top: 1em;
+}
+
+.footer p{
+    padding-bottom: 1em;
+}
+
+
 @media all and (min-width: 0px) and (max-width: 500px){
     h1{
         font-size: 22px;

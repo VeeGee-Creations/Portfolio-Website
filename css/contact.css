@@ -12,6 +12,14 @@
     height: 81px;
 }
 
+.footer__item{
+    padding-top: 1em;
+}
+
+.footer p{
+    padding-bottom: 1em;
+}
+
 @media all and (min-width: 0px) and (max-width: 500px){
     #contact-message{
         width: 200px;
