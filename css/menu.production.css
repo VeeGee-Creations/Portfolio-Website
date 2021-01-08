@@ -71,6 +71,8 @@
 .menu-wrap .menu-list > li{
     width: 100%;
     height: 100%;
+    -webkit-width: initial;
+    -webkit-height: initial;
 }
 
 .menu-list__item{
