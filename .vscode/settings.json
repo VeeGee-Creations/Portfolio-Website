@@ -1,4 +1,13 @@
 {
     "browser-preview.startUrl": "file:///C:/Users/Vincent/Documents/GitHub/Intro-To-Frontend/index_new.html",
-    "browser-preview.chromeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+    "browser-preview.chromeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+    "search.exclude": {
+        "**/*.log": true,
+        "**/*.vscode": true,
+        "**/node_modules/**\": true": true
+    },
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/*.log": true
+    }
 }
