@@ -258,3 +258,10 @@ td{
         max-width: 400px;
     }
 }
+
+@media all and (min-width: 0px) and (max-width: 768px){
+    .projects{
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    }
+}
