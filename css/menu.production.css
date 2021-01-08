@@ -68,11 +68,9 @@
     transition: all .6s cubic-bezier(0.42, 0, 0.36, 1.93);
 }
 
-.menu-wrap .menu-list > li{
-    -webkit-width: initial;
-        width: 100%;
-    -webkit-height: initial;
-        height: 100%;
+.menu-wrap .menu-list li{
+    width: 100%;
+    height: 100%;
 }
 
 .menu-list__item{
@@ -80,6 +78,7 @@
     font-weight: 700;
     text-decoration: none;
     font-size: 20px;
+
     width: inherit;
     height: inherit;
     display: -webkit-box;
@@ -227,3 +226,11 @@
         -ms-transform: scale(1);
             transform: scale(1);
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        .menu-list__item {
+        
+      }
+    }
+  }
