@@ -1,33 +1,136 @@
-.body{
-    grid-auto-rows: 1fr;
-}
-
 .content{
-    grid-row-start: 4;
-    grid-column: 5 / 9;
+    grid-area: 3 / 5 / auto / 9;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .about{
+    grid-row-start: 4;
     text-align: center;
+    min-width: 300px;
+}
+
+.button:visited{
+    color: #17202A;
 }
 
 .table{
+    position: relative;
     text-align: center;
+    left: 10px;
 }
 
 table{
-    border: 2px solid black;
+    border: 2px solid var(--text-primary);
 }
 
 th{
-    border: 1px solid black;
-    padding: 6px;
+    border: 1px solid var(--text-primary);
+    padding: 1em;
 }
 
 td{
-    border: 1px solid black;
-    padding: 6px;
+    border: 1px solid var(--text-primary);
+    padding: .5em;
+}
+
+.programmer{
+    position: relative;
+    margin-top: 20px;
+}
+
+@keyframes circle-rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes square1-bounce{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(3deg) rotateY(-3deg);
+    }
+}
+
+@keyframes square2-bounce{
+    from{
+        transform: rotateX(-3deg) rotateY(3deg);
+    }
+    to{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+
+@keyframes foot-bounce{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(6deg);
+    }
+}
+
+@keyframes arm-bounce{
+    0%{
+        transform: rotate(6deg);
+    }
+    5%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(6deg);
+    }
+    15%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(6deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(6deg);
+    }
+    100%{
+        transform: rotate(6deg);
+    }
+}
+
+#Circles{
+    animation: 10s circle-rotate infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Square-1{
+    animation: 1s square1-bounce infinite alternate linear;
+}
+
+#Square-2{
+    animation: 1s square2-bounce infinite alternate linear;
+}
+
+#Foot{
+    animation: .8s foot-bounce infinite alternate ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Arm-Top{
+    animation: 3.3s arm-bounce infinite ease;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@media all and (min-width: 0px) and (max-width: 500px){
+    .about{
+        max-width: 400px;
+    }
 }

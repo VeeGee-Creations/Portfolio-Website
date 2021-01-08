@@ -1,0 +1,227 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.menu-wrap{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 2;
+}
+
+.menu-wrap .hamburger,
+.menu-wrap .menu-list{
+    position: relative;
+}
+
+.menu-wrap .menu-list{
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style: none;
+    position: absolute;
+    background: #34495E;
+    border: 2px solid #DCE0E0;
+    border-radius: 5px;
+    left: -230px;
+    top: -15px;
+    width: 200px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all 5s ease;
+    -o-transition: all 5s ease;
+    transition: all 5s ease;
+}
+
+.menu-wrap .menu{
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: scale(0) rotate(90deg) translate(40px, 30px);
+        -ms-transform: scale(0) rotate(90deg) translate(40px, 30px);
+            transform: scale(0) rotate(90deg) translate(40px, 30px);
+    -webkit-transition: all .6s cubic-bezier(0.42, 0, 0.36, 1.93);
+    -o-transition: all .6s cubic-bezier(0.42, 0, 0.36, 1.93);
+    transition: all .6s cubic-bezier(0.42, 0, 0.36, 1.93);
+}
+
+.menu-wrap .menu-list > li{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-list__item{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    width: inherit;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.menu-list__item:hover{
+    background-color: #566573;
+    border-top: 2px  inset #DCE0E0;
+    border-bottom: 2px  inset #DCE0E0;
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.menu-list__item:visited{
+    color: #DCE0E0;
+}
+
+.menu-wrap .menu-list__item--active{
+    color: #17202A;
+}
+
+.menu-wrap .toggler{
+    position: absolute;
+    left: -60px;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+/* Hamburger Box */
+.menu-wrap .hamburger{
+    position:absolute;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    left: -60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #34495E;
+    border: 2px solid #DCE0E0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/* Middle Line */
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #DCE0E0;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/* Top and Bottom Line */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 4px;
+    background: inherit;
+    border-radius: 5px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/* Move Bottom and Top Line */
+.menu-wrap .hamburger > div::before{
+    -webkit-transform: translateY(-12px);
+        -ms-transform: translateY(-12px);
+            transform: translateY(-12px);
+}
+
+.menu-wrap .hamburger > div::after{
+    -webkit-transform: translateY(12px);
+        -ms-transform: translateY(12px);
+            transform: translateY(12px);
+}
+
+/* Toggler Animate */
+.menu-wrap .toggler:checked + .hamburger > div{
+    -webkit-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+            transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div::before{
+    background: #DCE0E0;
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+        -ms-transform: rotate(45deg) translate(35px, -35px);
+            transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div::after{
+    background: #DCE0E0;
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+        -ms-transform: rotate(-45deg) translate(35px, 35px);
+            transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-wrap .toggler:checked ~ .menu{
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}

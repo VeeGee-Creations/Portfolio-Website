@@ -1,11 +1,8 @@
-.body{
-    grid-auto-rows: 1fr;
-}
 .content{
-    grid-row-start: 2;
-    grid-column: 5 / 11;
+    grid-area: 4 / 4 / auto / 10;
     display: flex;
-    padding-top: 15%;
+    align-self: center;
+    justify-content: center;
 }
 
 .selfie{
@@ -28,4 +25,18 @@
 mark{
     background-color: #000;
     color:  #B7950B;
+}
+
+.introduction{
+    min-width: 250px;
+}
+
+@media all and (min-width: 0px) and (max-width: 768px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
