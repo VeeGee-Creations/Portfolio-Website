@@ -78,9 +78,8 @@
     font-weight: 700;
     text-decoration: none;
     font-size: 20px;
-
-    width: inherit;
-    height: inherit;
+    width: 49px;
+    height: 49px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -226,12 +225,3 @@
         -ms-transform: scale(1);
             transform: scale(1);
 }
-
-@media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-        .menu-list__item {
-        height: initial;
-        width: initial;
-      }
-    }
-  }
