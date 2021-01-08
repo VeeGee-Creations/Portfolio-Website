@@ -7,6 +7,7 @@
 
 .content{
     -ms-grid-column: 5;
+        grid-column: 5;
     -ms-grid-column-span: 4;
     grid-area: 3 / 5 / auto / 9;
     display: -webkit-box;
@@ -23,7 +24,7 @@
 
 .about{
     -ms-grid-row: 4;
-        grid-row-start: 4;
+        grid-row: 4;
     text-align: center;
     min-width: 300px;
 }

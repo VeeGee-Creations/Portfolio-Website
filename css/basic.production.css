@@ -31,7 +31,7 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(#34495E) , to(#566573));
+    background-image: -webkit-linear-gradient(left top, right top, from(#34495E) , to(#566573));
     background-image: -o-linear-gradient(left, #34495E , #566573);
     background-image: linear-gradient(to right, #34495E , #566573);
 }
@@ -64,7 +64,7 @@ a:hover, a:focus{
 }
 
 .footer{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#34495E) , to(#566573));
+    background-image: -webkit-linear-gradient(left top, left bottom, from(#34495E) , to(#566573));
     background-image: -o-linear-gradient(top, #34495E , #566573);
     background-image: linear-gradient(to bottom, #34495E , #566573);
 }
@@ -79,7 +79,7 @@ a:hover, a:focus{
     height: 100vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
+    -ms-grid-columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
     grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: (1fr)[auto];
     grid-template-rows: repeat(auto, 1fr);
@@ -143,7 +143,7 @@ button:hover, button:focus, .button:hover, .button:focus{
 
 .footer{
     -ms-grid-row: 7;
-        grid-row-start: 7;
+        grid-row: 7;
     grid-column: 1 / -1;
     text-align: center;
     -ms-flex-line-pack: distribute;
@@ -170,7 +170,7 @@ button:hover, button:focus, .button:hover, .button:focus{
     }
 
     .grid-container{
-        -ms-grid-columns: (auto)[12];
+        -ms-grid-columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto);
         grid-template-columns: repeat(12, auto);
     }
 }

@@ -7,6 +7,7 @@
 
 .content{
     -ms-grid-column: 3;
+        grid-column: 3;
     -ms-grid-column-span: 8;
     grid-area: 2 / 3 / auto / 11;
     display: -webkit-box;
