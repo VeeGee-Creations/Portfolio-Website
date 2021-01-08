@@ -1,10 +1,11 @@
-/*
-Colors used
+:root{
+    --primary-color: #34495E;
+    --secondary-color: #566573;
+    --text-primary: #DCE0E0;
+    --text-highlight: #0BD6E5;
+    --text-inverted: #17202A;
+}
 
-Text Color:  #DCE0E0;
-Primary Color: #34495E;
-Secondary Color: #566573;
-*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,15 +22,15 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    background-color:  #34495E;
-    color: #DCE0E0;
+    background-color:  var(--primary-color);
+    color: var(--text-primary);
 }
 
 header{
     z-index: 1;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to right, #34495E , #566573);
+    background-image: linear-gradient(to right, var(--primary-color) , var(--secondary-color));
 }
 
 h1{
@@ -48,11 +49,11 @@ h3{
 }
 
 a{
-    color: #DCE0E0;
+    color: var(--text-primary);
 }
 
 a:visited{
-    color: #0BD6E5;
+    color: var(--text-highlight);
 }
 
 a:hover, a:focus{
@@ -60,7 +61,7 @@ a:hover, a:focus{
 }
 
 .footer{
-    background-image: linear-gradient(to bottom, #34495E , #566573);
+    background-image: linear-gradient(to bottom, var(--primary-color) , var(--secondary-color));
 }
 
 .footer h3{
@@ -91,8 +92,8 @@ button, .button{
     /*inherit font from parent*/
     font-family: inherit;
     /*style button and font*/
-    background-color: #DCE0E0;
-    color: #17202A;
+    background-color: var(--text-primary);
+    color: var(--text-inverted);
     text-decoration: none;
     padding: .75em;
     border-radius: 3px;

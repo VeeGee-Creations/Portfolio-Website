@@ -17,28 +17,26 @@
 
 .table{
     position: relative;
-    /* min-width: 400px; */
     text-align: center;
     left: 10px;
 }
 
 table{
-    border: 2px solid #DCE0E0;
+    border: 2px solid var(--text-primary);
 }
 
 th{
-    border: 1px solid #DCE0E0;
+    border: 1px solid var(--text-primary);
     padding: 1em;
 }
 
 td{
-    border: 1px solid #DCE0E0;
+    border: 1px solid var(--text-primary);
     padding: .5em;
 }
 
 .programmer{
     position: relative;
-    /* left: -120px; */
     margin-top: 20px;
 }
 

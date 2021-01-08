@@ -12,8 +12,8 @@
 }
 
 .projects__item, .projects__item p, .projects__item a{
-    background-color: lightgray;
-    color: #000;
+    background-color: var(--text-primary);
+    color: var(--text-inverted);
 }
 
 .projects__item{
