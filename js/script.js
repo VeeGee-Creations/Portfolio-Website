@@ -23,7 +23,7 @@
         return true;
     }
 
-    function validateMesage() {
+    function validateMessage() {
         let value = messageInput.value;
 
         if (!value) {
@@ -103,6 +103,10 @@
         e.preventDefault(); // Do not submit to the server
         if (validateForm()) {
             alert('Success!');
+            emailInput.value = null;
+            phoneInput.value= null;
+            messageInput.value = null;
+            
         }
     })
 
