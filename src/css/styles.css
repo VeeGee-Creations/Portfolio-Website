@@ -204,7 +204,8 @@ p {
     transition: .3s ease letter-spacing;
 }
 
-#header .navlist ul li:hover a::after {
+#header .navlist ul li:hover a::after,
+#header .navlist ul li a:focus::after {
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
 }
