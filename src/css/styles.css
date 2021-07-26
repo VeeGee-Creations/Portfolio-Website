@@ -86,7 +86,7 @@ p {
     display: inline-block;
     padding: 10px 30px;
     color: var(--text-light);
-    background-color: transparent;
+    background-color: var(--hilight-color);
     border: 2px solid var(--hilight-color);
     font-size: 2rem;
     text-transform: uppercase;
@@ -546,12 +546,11 @@ p {
 
 #footer .social-item img {
     object-fit: contain;
-    filter: grayscale(1);
+    filter: grayscale(0);
     transition: .3s ease filter;
 }
 
 #footer .social-item:hover img {
-    object-fit: contain;
     filter: grayscale(0);
 }
 
@@ -723,6 +722,10 @@ p {
 
 /* Desktop Media Query */
     @media only screen and (min-width: 1200px) {
+        .cta {
+            background-color: transparent;
+        }
+
         /* Header */
         #header .hamburger {
             display: none;
@@ -753,5 +756,11 @@ p {
             font-size: 2rem;
         }
         /* End Header */
+
+        /* Footer */
+        #footer .social-item img {
+            filter: grayscale(1);
+        }
+        /* End Footer */
     }
 /* End Desktop Media Query */
