@@ -1,59 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-, initial-scale=1">
-        <title>VeeGee Creations</title>
-        <link rel="shortcut icon" href="assets/favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="css/basic.production.css">
-        <link rel="stylesheet" href="css/index.production.css">
-        <link rel="stylesheet" href="css/menu.production.css">
-    </head>
-    <body>
-        <div class="grid-container">
-            <header class="header">  
-                <div class="logo header__item">
-                    <img src="assets/VeeGee_Creations_white_200x200_cropped.png" alt="VeeGee Creations" class="logo__item">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/styles.css">
+    <script src="./dist/js/index.js" defer></script>
+    <link rel="shortcut icon" type="image/icon" href="./assets/favicon.ico"/>
+    <title>VeeGee-Creations</title>
+</head>
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="navbar">
+                <div class="brand">
+                    <a href="#hero">
+                    <h1><span>Vincent Geesman</span></h1>
+                    </a>
                 </div>
-                <div class="menu-wrap">
-                    <input type="checkbox" class="toggler">
-                    <div class="hamburger"><div></div></div>
-                    <div class="menu">
-                        <nav class="menubar">
-                            <ul role="menubar" class="menu-list">
-                                <li role="presentation"><a href="index.html" role="menuitem" class="menu-list__item menu-list__item--active">Home</a></li>
-                                <li role="presentation"><a href="projects.html" role="menuitem" class="menu-list__item">Projects</a></li>
-                                <li role="presentation"><a href="about.html" role="menuitem" class="menu-list__item">About Me</a></li>
-                                <li role="presentation"><a href="contact.html#contact" role="menuitem" class="menu-list__item">Contact</a></li>
-                            </ul>
-                        </nav>
+                <div class="navlist">
+                    <div class="hamburger" aria-label="menu toggle button">
+                        <div class="bar"></div>
                     </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home" aria-label="go to home section">Home</a></li>
+                        <li><a href="#about" data-after="About" aria-label="go to about me section">About</a></li>
+                        <li><a href="#projects" data-after="Projects" aria-label="go to projects section">Projects</a></li>
+                        <li><a href="#footer" data-after="Links" aria-label="go to social links section">Links</a></li>
+                    </ul>
                 </div>
-            </header>
-            <main class="content">
-                <div class="selfie content__item">
-                    <img src="assets/selfie.jpg" alt="Personal Photo" class="selfie__item">
-                </div>
-                <div class="introduction content__item">
-                    <h1>Hello World!</h1>
-                    <p>My name is Vincent Geesman.</p>
-                    <p>I am a <mark>&lt;web&gt;</mark> development student from California.</p>
-                    <br />
-                    <a href="https://github.com/VeeGee-Creations?tab=repositories" target="_blank">Check out some of my code</a>
-                </div>
-            </main>
-            <footer class="footer">
-                    <p>Follow me on</p>
-                    <div class="footer__item">
-                        <a href="https://github.com/VeeGee-Creations" target="_blank"><img src="assets/github-32.png" alt="Github"></a>
-                        <a href="https://twitter.com/VincentGeesman" target="_blank"><img src="assets/twitter-32.ico" alt="Twitter"></a>
-                        <a href="https://www.linkedin.com/in/vincent-geesman/" target="_blank"><img src="assets/linkedin-32.ico" alt="LinkedIn"></a>
-                    </div>
-            </footer>
-            <!-- <script src="js/tota11y.min.js"></script> -->
+            </div>
         </div>
-    </body>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="./assets/globe.jpg" alt="Globe Image" class="parallax">
+        <div class="hero container">
+            <div>
+                <h1>const</h1>
+                <h1>myName =</h1>
+                <div class="dynamic-container">
+                    <h1>'</h1>
+                <h1 class="dynamic">Vincent</h1>
+                <h1>'</h1>
+                </div>
+                <a href="#projects"class="cta" type="button" aria-label="go to projects section">Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-image">
+                    <img src="./assets/selfie.jpg" alt="Vincent">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>Me</span></h1>
+                <h2>Full-stack Developer</h2>
+                <p>
+                    I’m a Full-Stack developer with a background in the production and fabrication industries. I know what it takes to bring a project from its beginning and build it up to be client ready. In my role, I was the initial point of contact for clients. I analyzed their requests and oversaw the production process from acquiring materials through to shipping the completed product. Throughout this process, maintaining open communication with the client to adjust deadlines and changes in product requirements.
+                    During my time in these industries, I found my love for creating solutions. I feel that nothing brings that knowledge of production and passion for problem solving together quite like software development.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    
+    <!-- Parallax1 -->
+    <section id="parallax1">
+        <div class="parallax1 container">
+        </div>
+    </section>
+    <!-- End Parallax1 -->
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="projects-item">
+                    <div class="project-info">
+                        <a href="https://veegee-creations.github.io/Pokedex/" target="_blank" aria-label="pokedex website"><h1>Pokedex</h1></a>
+                        <p>
+                            This project demonstrates fetch requests to an api. It’s written in JavaScript. I used bootstrap to display a modal and layout the grid. Additionally, I've created the
+                            HTML and CSS templates. Pagination has been implemented for easier browsing.
+                        </p>
+                        <a href="https://github.com/VeeGee-Creations/pokedex" target="_blank" aria-label="pokedex repository"><h2>View source on GitHub</h2></a>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/pokedex.PNG" alt="pokedex">
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <a href="https://pocket-movies.netlify.app/" target="_blank" aria-label="pocket movies website"><h1>Pocket Movies</h1></a>
+                        <p>
+                            Within this project, I wrote not only the frontend, but the api and database as well. The client side was developed using React and Redux.
+                            The API was created using Node and Express and uses JWT to authenticate users. All data is served from a NoSQL Database created using MongoDB.
+                        </p>
+                        <a href="https://github.com/VeeGee-Creations/pocketMovie-client" aria-label="pocket movies repository"><h2>View source on GitHub</h2></a>
+                    </div>
+                    <div class="project-image">
+                        <img class="projects_image" src="assets/pocket-Movie_client.PNG" alt="pocketMovie"/>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <a href="https://veegee-creations.github.io/meet/" target="_blank" aria-label="meet website"><h1>Meet</h1></a>
+                        <p>
+                            This Project uses Test Driven Development to create a serverless PWA which uses oAuth2 for user validation. Data is visualized using Recharts.
+                        </p>
+                        <a href="https://github.com/VeeGee-Creations/meet" target="_blank" aria-label="meet repository"><h2>View Source on GitHub</h2></a>
+                    </div>
+                    <div class="project-image">
+                        <img class="projects_image" src="assets/meet.PNG" alt="meet-app"/>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <a href="https://youtu.be/bdTflqcipDQ" target="_blank"><h1>Chatter</h1></a>
+                        <p>
+                            A mobile chat app created using React Native and Gifted Chat. Allows for multimedia messages and location sharing. Utilizes Firestore for live message updates. Android and IOS compatible.
+                        </p>
+                        <a href="https://github.com/VeeGee-Creations/chatter-app" target="_blank" aria-label="chatter repository"><h2>View source on GitHub</h2></a>
+                    </div>
+                    <div class="project-image">
+                        <img class="projects_image" src="assets/chatter.png" alt="chatter-app"/>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <a href="https://veegee-creations.github.io/pocketMovie-Angular-client/" target="_blank" aria-label="pocket movies angular website"><h1>Pocket Movies Angular</h1></a>
+                        <p>
+                            A reimagining of my Pocket Movie client in the Angular Framework. Uses Angular Material UI components. Introduced carousel scrolling and featured movies.
+                        </p>
+                        <a href="https://github.com/VeeGee-Creations/pocketMovie-Angular-client" aria-label="pocket movies angular repository"><h2>View source on GitHub</h2></a>
+                    </div>
+                    <div class="project-image">
+                        <img class="projects_image" src="assets/pocket-movie-angular.PNG" alt="Pocket Movies Angular"/>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <h1>Future Project</h1>
+                        <h2>
+                            Keep an eye out, more Projects to come!
+                        </h2>
+                    </div>
+                    <div class="project-image">
+                        <img class="projects_image" src="assets/coming soon.png" alt="coming soon"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Parallax2 -->
+    <section id="parallax2">
+        <div class="parallax2 container">
+        </div>
+    </section>
+    <!-- End parallax2 -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>Vincent Geesman</span></h1>
+                <h2>Beautifly Elegant Solution</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="https://github.com/VeeGee-Creations" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><img src="./assets/Octocat.png" alt="GitHub"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://www.linkedin.com/in/vincent-geesman/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="./assets/LI-In-Bug.png" alt="LinkedIn"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://twitter.com/VincentGeesman" target="_blank" rel="noopener noreferrer"><img src="./assets/Logo blue.svg" alt="Twitter"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://stackoverflow.com/users/14800102/veegee" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow profile"><img src="./assets/LogoGlyph.svg" alt="Stack Overflow"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <!-- <script src="js/tota11y.min.js"></script> -->
+</body>
 </html>
