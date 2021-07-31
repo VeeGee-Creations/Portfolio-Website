@@ -1,5 +1,6 @@
 
 (function menuControl() {
+    const headerSection = document.querySelector('#header');
     const header = document.querySelector('.header');
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('ul');
@@ -34,9 +35,15 @@
     document.addEventListener('scroll', function() {
         const position = window.pageYOffset;
 
-        if(position > 45) return header.style.backgroundColor = '#29323C';
+        if(position > 45) return (
+                header.style.backgroundColor = '#29323C',
+                headerSection.style.boxShadow = '0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12)'
+            );
         
-        return header.style.backgroundColor = 'transparent';
+        return (
+            header.style.backgroundColor = 'transparent',
+            headerSection.style.boxShadow = 'none'
+        );
     });
 
 })();
