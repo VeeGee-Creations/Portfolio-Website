@@ -564,8 +564,8 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: var(--gradient-dark);
-    opacity: .7;
+    background-color: var(--text-dark);
+    mix-blend-mode: screen;
 }
 
 #projects .project-image img {
@@ -881,7 +881,7 @@ p {
 
     /* Projects */
 
-    #hero .all-projects {
+    #projects .all-projects {
         box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
                     0 2px 2px rgba(0,0,0,0.12), 
                     0 4px 4px rgba(0,0,0,0.12), 
@@ -898,6 +898,7 @@ p {
         margin: 0;
         width: 100%;
         border-radius: 0;
+        box-shadow: none;
     }
 
     #projects .projects-item:nth-child(even) {
