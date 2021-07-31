@@ -90,12 +90,14 @@ p {
 }
 
 #projects, #about, #footer {
-    box-shadow: 0 0 1px 1px rgba(0,0,0,0.12), 
-                0 0 2px 2px rgba(0,0,0,0.12), 
-                0 0 4px 4px rgba(0,0,0,0.12), 
-                0 0 8px 8px rgba(0,0,0,0.12),
-                0 0 16px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
 }
+
+
 
 .cta {
     display: inline-block;
@@ -498,6 +500,11 @@ p {
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
 }
 
 #projects .project-info {
@@ -717,7 +724,7 @@ p {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+        object-fit: cover;
     z-index: -1;
 }
 
@@ -729,7 +736,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .4;
+    mix-blend-mode: soft-light;
     z-index: -1;
 }
 
@@ -873,6 +880,15 @@ p {
     /* End About */
 
     /* Projects */
+
+    #hero .all-projects {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                    0 2px 2px rgba(0,0,0,0.12), 
+                    0 4px 4px rgba(0,0,0,0.12), 
+                    0 8px 8px rgba(0,0,0,0.12),
+                    0 16px 16px rgba(0,0,0,0.12);
+    }
+
     #projects .projects-item {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
